@@ -1,6 +1,9 @@
 @import "tailwindcss";
+/* this below styling is the issue, the global css used affects all, import tailwind and use for your styling 
+check the signup page for how the styling was done, npm run dev to check the changes. Also check to see how the structure
+is meant to be*/
 
-* {
+/* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -34,4 +37,4 @@ body {
     display: inline-block;
     transition: background-color 0.3s ease;
   }
-}
+}*/
