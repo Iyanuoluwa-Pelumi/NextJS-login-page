@@ -1,9 +1,9 @@
 "use client";
 
-import AuthForm from "../auth/page";
+import AuthForm from "../../../../components/AuthForm";
 
 export default function LoginPage() {
-  const handleLogin = (data: { email: string; password: string }) => {
+  const handleLogin = (data: { name?: string; email: string; password: string }) => {
     console.log("Login data:", data);
   };
 
