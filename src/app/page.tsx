@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function HomePage() {
   return (
-    <div className="main-div">
+    <div className="flex flex-col items-center justify-center h-screen">
         <Image
           src="/foxhub logo.png"
           alt="FoxHub Logo"
@@ -29,8 +29,11 @@ export default function HomePage() {
         Aliquam reiciendis nisi voluptas quasi nihil.
       </p>
 
-      <Link href="/auth/signup" className="cta-button">Get Started</Link>
+      
+      <div className="py-7 mt-[200px] ">
+        <Link href="/auth/signup" className="py-8 px-4 rounded-2xl mt-7 bg-[rgba(66,66,66,1)] cursor-pointer block">Get Started</Link>
+      </div>
 
-    </div>
+    </div> 
   );
 }
