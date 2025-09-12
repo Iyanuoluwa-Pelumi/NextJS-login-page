@@ -5,7 +5,6 @@ import Link from "next/link";
 import { BiUser, BiEnvelope, BiLock, BiShow, BiHide } from "react-icons/bi";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { FoxHubForm } from "../types.ts/AuthTypes";
-import "../components/style.css"
 
 export default function AuthForm({ formType, onSubmit }: FoxHubForm) {
   const [formData, setFormData] = useState({

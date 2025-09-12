@@ -1,6 +1,6 @@
 "use client";
 
-import AuthForm from "../../../../components/AuthForm";
+import AuthForm from "../../../components/AuthForm";
 
 export default function SignupPage() {
   const handleSignup = (data: { name?: string; email: string; password: string }) => {
