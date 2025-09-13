@@ -1,15 +1,22 @@
 @import "tailwindcss";
-@tailwind utilities;
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
+@layer base {
+    h1 {
+        @apply text-4xl font-bold tracking-tight;
+    }
+
+    p {
+        @apply text-gray-700 leading-relaxed;
+    }
 }
 
-body {
-  background: linear-gradient(180deg, #59599B 0%, #24243E 59.38%, #0F0C29 100%);
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-}
+
+@layer components {
+    .btn-primary {
+        @apply px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700;
+    }
+
+    .card {
+        @apply bg-white rounded-xl shadow-md p-6;
+    } }

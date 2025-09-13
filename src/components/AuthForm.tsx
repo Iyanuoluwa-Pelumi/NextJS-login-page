@@ -4,7 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { BiUser, BiEnvelope, BiLock, BiShow, BiHide } from "react-icons/bi";
 import { MdKeyboardArrowLeft } from "react-icons/md";
-import { FoxHubForm } from "../types.ts/AuthTypes";
+import { FoxHubForm } from "@/types.ts/AuthTypes";
+
 
 export default function AuthForm({ formType, onSubmit }: FoxHubForm) {
   const [formData, setFormData] = useState({
@@ -21,6 +22,8 @@ export default function AuthForm({ formType, onSubmit }: FoxHubForm) {
   };
 
   return (
+
+    <>
     <div className="flex flex-col items-center justify-around min-h-screen w-full bg-[rgba(249,249,250,1)] p-6">
       
 
@@ -59,7 +62,7 @@ export default function AuthForm({ formType, onSubmit }: FoxHubForm) {
               value={formData.name}
               required
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="custom-input"
+              className="py-[0.8rem] pr-[5.5rem] pl-[2rem] text-[rgba(66,66,66,1)] border rounded-[5px] outline-none"
             />
           </div>
         )}
@@ -114,6 +117,7 @@ export default function AuthForm({ formType, onSubmit }: FoxHubForm) {
         <p>© {new Date().getFullYear()} FoxHub Inc. All rights reserved.</p>
         <p>Need help?</p>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
