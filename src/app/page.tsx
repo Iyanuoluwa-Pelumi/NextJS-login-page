@@ -30,23 +30,8 @@ export default function HomePage() {
       </p>
 
       
-      <Link href="/auth/signup" className="px-4 py-2 rounded-lg shadow mt-5 bg-purple-950 hover:bg-purple-700 text-white cursor-pointer">Get Started</Link>
-
+      <Link href="/auth/signup" className="px-4 py-2 rounded-lg shadow mt-5 bg-purple-950 transform hover:scale-110 transition text-white cursor-pointer">Get Started</Link>
       
-      <div className="p-8 space-y-6">
-      {/* Base layer styles automatically apply to h1 and p */}
-      <h1>Welcome to My App</h1>
-      <p>This paragraph automatically has gray text and relaxed line height.</p>
-
-      {/* Components layer: reusable classes */}
-      <button className="btn-primary">Get Started</button>
-
-      <div className="card">
-        <h2 className="text-xl font-semibold mb-2">Card Title</h2>
-        <p>Card content goes here.</p>
-      </div>
-
-      </div>
     </div> 
 
     
