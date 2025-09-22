@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#59599B]">
+    <div className="flex flex-col items-center justify-around md:justify-center min-h-screen bg-[#59599B]">
       <Image
         src="/foxhub logo.png"
         alt="FoxHub Logo"
