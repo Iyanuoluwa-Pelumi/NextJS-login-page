@@ -4,9 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-export default function HomePage() {
+export default function App() {
   return (
-    <div className="flex flex-col items-center justify-center h-full bg-[#59599B]">
+    <div className="flex flex-col items-center justify-between md:justify-center md:h-screen bg-[#59599B]">
       <Image
         src="/foxhub logo.png"
         alt="FoxHub Logo"
@@ -28,7 +28,7 @@ export default function HomePage() {
         Aliquam reiciendis nisi voluptas quasi nihil.
       </p>
 
-      <Link href="/auth/signup" className="px-4 py-2 rounded-lg shadow mt-5 bg-purple-950 transform active:scale-110 hover:scale-110 transition text-white cursor-pointer">Get Started</Link>
+      <Link href="/auth/signup" className="px-4 py-2 rounded-lg shadow mt-5 bg-purple-950 transform hover:scale-110 transition text-white cursor-pointer">Get Started</Link>
     </div> 
   );
 }
