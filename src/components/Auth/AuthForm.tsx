@@ -27,16 +27,16 @@ export default function AuthForm({ formType, onSubmit }: FoxHubForm) {
     <div className="flex flex-col items-center justify-around min-h-screen w-full bg-[rgba(249,249,250,1)] p-6">
       
 
-      <div className="flex justify-around items-center w-full">
-        <Link href="/" className="flex items-center text-[rgba(66,66,66,1)] hover:underline no-underline">
+      <div className="flex justify-between md:justify-around items-center w-full">
+        <Link href="/" className="flex items-center text-sm md:text-base text-[rgba(66,66,66,1)] hover:underline no-underline">
           <MdKeyboardArrowLeft size={20} className="mr-1" />
           Return Home
         </Link>
-        <p className="text-sm text-center text-[rgba(66,66,66,1)] mt-2">
+        <p className="text-sm text-center text-[rgba(66,66,66,1)]">
           {formType === "signup" ? "Already a member? " : "Not a member yet? "}
           <Link
             href={formType === "signup" ? "/auth/login" : "/auth/signup"}
-            className=" text-[rgba(66,66,66,1)] underline hover:bg-[rgba(36,36,62,1)] hover:p-1.5 hover:text-white hover:rounded-lg hover:no-underline"
+            className=" text-[rgba(66,66,66,1)] underline text-sm md:text-base hover:bg-[rgba(36,36,62,1)] active:bg-[rgba(36,36,62,1)] hover:p-1.5 active:p-1.5 hover:text-white active:text-white active:rounded-lg active:no-underline hover:rounded-lg hover:no-underline"
           >
             {formType === "signup" ? "LOGIN NOW" : "JOIN NOW"}
           </Link>
@@ -107,15 +107,15 @@ export default function AuthForm({ formType, onSubmit }: FoxHubForm) {
         
           <button
             type="submit"
-            className="py-3 px-18 border rounded-lg bg-[rgba(36,36,62,1)] text-base text-[rgba(255,255,255,1)] cursor-pointer transform hover:scale-110 transition"
+            className="py-3 px-18 border rounded-lg bg-[rgba(36,36,62,1)] text-base text-[rgba(255,255,255,1)] cursor-pointer transform active:scale-110 hover:scale-110 transition"
           >
             {formType === "signup" ? "Become a member" : "Proceed to my account"}
           </button>
   </form>
 
-      <div className="flex justify-around text-[rgba(66,66,66,1)] w-full">
-        <p>© {new Date().getFullYear()} FoxHub Inc. All rights reserved.</p>
-        <p>Need help?</p>
+      <div className="flex justify-between md:justify-around text-[rgba(66,66,66,1)] w-full">
+        <p className="text-sm md:text-base">© {new Date().getFullYear()} FoxHub Inc. All rights reserved.</p>
+        <p className="text-sm md:text-base">Need help?</p>
       </div>
       </div>
     </>
